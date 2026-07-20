@@ -76,29 +76,7 @@ button:hover{
 
 <body>
 
-<div class="container">
-    <h1>GetClients</h1>
-    <p>Fill out the form and we'll connect with you.</p>
-
-    <form id="clientForm">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Email Address" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <textarea placeholder="Tell us about your business"></textarea>
-
-        <button type="submit">Submit</button>
-    </form>
-</div>
-
-<script>
-document.getElementById("clientForm").addEventListener("submit", function(e){
-    e.preventDefault();
-
-    // Redirect to external URL
-    window.location.href = "https://example.com/thank-you";
-});
-</script>
-<section class="hero-content">
+    <section class="hero-content">
 
     <h1>Get More Clients. Pay Nothing.</h1>
 
@@ -182,6 +160,30 @@ document.getElementById("clientForm").addEventListener("submit", function(e){
         Enter your business details and take the first step toward connecting with more potential customers.
     </p>
 
-</section>
+    </section>
+
+<div class="container">
+    <h1>GetClients</h1>
+    <p>Fill out the form and we'll connect with you.</p>
+
+    <form id="clientForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Tell us about your business"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("clientForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Redirect to external URL
+    window.location.href = "https://example.com/thank-you";
+});
+</script>
+
 </body>
 </html>
