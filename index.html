@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GetClients</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f7fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+}
+
+.container{
+    width:90%;
+    max-width:420px;
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:10px;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:25px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ddd;
+    border-radius:6px;
+    font-size:15px;
+}
+
+textarea{
+    resize:vertical;
+    height:100px;
+}
+
+button{
+    width:100%;
+    padding:13px;
+    background:#2563eb;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>GetClients</h1>
+    <p>Fill out the form and we'll connect with you.</p>
+
+    <form id="clientForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <textarea placeholder="Tell us about your business"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+document.getElementById("clientForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    // Redirect to external URL
+    window.location.href = "https://example.com/thank-you";
+});
+</script>
+
+</body>
+</html>
